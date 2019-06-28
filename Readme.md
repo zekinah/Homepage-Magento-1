@@ -1,4 +1,4 @@
-# Create New Homepage Template - Magento 1
+# New Homepage Template - Magento 1
 
 This module allows you to override new Template Layout available in Magento 1 specially the Homepage.
 
@@ -9,7 +9,7 @@ This module allows you to override new Template Layout available in Magento 1 sp
 ```
 CMS -> Homepage -> Page Information[Sidebar] -> Design -> Page Layout[Header] -> Layout -> Homepage
 ```
-	then click save.
+then click save.
 4. Hard Refresh your site.
 
 ## Author
