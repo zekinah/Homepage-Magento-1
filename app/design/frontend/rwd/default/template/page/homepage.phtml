@@ -1,0 +1,51 @@
+<?php
+/**
+ * Magento 1
+ * Module Name: Zjel_Homepage
+ * version: 1.0
+ * Author: Zekinah Lecaros
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body <?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+
+<?php echo $this->getChildHtml('global_notices') ?>
+<?php echo $this->getChildHtml('header') ?>
+
+<div class="1-col">
+	<div class="row">
+		<div class="col-md-12">
+			<?php echo $this->getChildHtml('breadcrumbs') ?>
+		</div>
+		<div class="col-md-12">
+			<div class="main">
+				<?php echo $this->getChildHtml('global_messages') ?>
+				<?php echo $this->getChildHtml('content') ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php echo $this->getChildHtml('footer_before') ?>
+<?php echo $this->getChildHtml('footer') ?>
+<?php echo $this->getChildHtml('global_cookie_notice') ?>
+<?php echo $this->getChildHtml('before_body_end') ?>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>
